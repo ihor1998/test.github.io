@@ -1,7 +1,16 @@
 table.table
     thead
         tr
-            th Hello World
+            -arr = ['Time/Day', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
+            each elem in arr 
+                th.table__col.head #{elem}
     tbody
-        tr
-            td Hello World
+        -arr = ['10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00', '17:00', '18:00']
+        each elem in arr
+            tr
+                td.table__col.time #{elem}
+                td.table__col
+                td.table__col
+                td.table__col
+                td.table__col
+                td.table__col

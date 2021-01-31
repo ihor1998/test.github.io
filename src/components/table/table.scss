@@ -1,0 +1,17 @@
+.table {
+  border: 3px solid #000;
+
+  &__col {
+    padding: 15px 25px;
+    border: 2px solid #000;
+    text-align: center;
+
+    &.head {
+      background-color: #8fc8ea;
+    }
+
+    &.time {
+      background-color: #9cf1c1;
+    }
+  }
+}
