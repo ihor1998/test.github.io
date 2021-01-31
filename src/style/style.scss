@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+
+@import "reset";
+
+* {
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.main {
+  padding: 10px;
+}
+
+@import "../components/header/header";
+
+@import "../components/table/table";
+
+@import "../components/form/form";
