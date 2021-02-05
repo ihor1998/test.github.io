@@ -14,6 +14,7 @@
   }
 
   &__select {
+    padding: 10px;
     outline: none;
     text-align: center;
     width: 140px;
@@ -22,15 +23,21 @@
     border-radius: 50px;
     transition: 0.3s;
     &:hover {
-      background-color: #c2c4f1;
+      background-color: #faa5a5;
     }
   }
 
+  &__option {
+    padding: 5px;
+  }
+
   &__btn {
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 140px;
     margin: 0 10px;
-    border: 1px solid #000;
+    border: 2px solid #000;
     padding: 15px;
     cursor: pointer;
     text-decoration: none;

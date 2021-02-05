@@ -9,10 +9,7 @@ function createElement() {
     cell.innerHTML = `
         <div class="table__event">
             <span>${elem.name}</span>
-            <div class="table__btn">
-              <span class="table__btn_line"></span>
-              <span class="table__btn_line"></span>
-            </div>
+            <i class="fa fa-times table__btn"></i>
         </div>
     `;
   });

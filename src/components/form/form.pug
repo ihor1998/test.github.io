@@ -1,10 +1,9 @@
 form(name="form").form
     .form__container
         h3 Name of the event:
-        input.form__input(type="text" name="input") 
-    .form__container
-        h3 Participants:
-        select.form__select(name="person")
+        input.form__input(type="text" name="input" placeholder="Event name:") 
+    
+    include ./form-components/custom-select.pug
             
     .form__container
         h3 Day:

@@ -17,7 +17,7 @@ tBodies.addEventListener('click', (e) => {
 
 function showMessage(event) {
   const elem = event.parentElement;
-  const title = elem.textContent && elem.parentElement.textContent;
+  const title = elem.textContent.trim();
 
   const html = `
         <section class="modal">
