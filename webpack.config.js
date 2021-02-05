@@ -9,6 +9,7 @@ const PAGES = fs.readdirSync(PAGES_DIR).filter((fileName) => fileName.endsWith('
 module.exports = (argv) => ({
   entry: {
     index: './src/js/index.js',
+    createEvent: './src/js/create-event.js',
   },
   output: {
     publicPath: './',
