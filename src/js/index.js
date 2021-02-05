@@ -2,7 +2,7 @@ import '../style/style.scss';
 
 import './scripts/data';
 
-// import './scripts/select';
+import './scripts/select';
 
 import './scripts/create-element';
 

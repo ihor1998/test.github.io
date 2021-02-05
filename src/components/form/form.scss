@@ -31,6 +31,60 @@
     padding: 10px 5px;
     font-size: 1.2rem;
     width: 200px;
+    &_wrapper {
+      position: relative;
+    }
+    &-custom {
+      min-height: 42px;
+      padding: 10px 5px;
+      font-size: 1.2rem;
+      width: 200px;
+      border: 1px solid #000;
+      border-radius: 10px;
+      background-color: #fff;
+      text-transform: capitalize;
+      position: relative;
+      &_item {
+        display: inline-block;
+      }
+      &_arrow {
+        cursor: pointer;
+        font-size: 10px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(-5px, -50%);
+        &:hover {
+          color: #ff7473;
+        }
+      }
+      &_cancel {
+        border-radius: 50%;
+        cursor: pointer;
+        margin-left: 5px;
+        transition: 0.3s;
+        &:hover {
+          color: #ff7473;
+        }
+      }
+      &__body {
+        background: #fff;
+        list-style-type: none;
+        padding: 5px 10px;
+        text-transform: capitalize;
+        position: absolute;
+        left: 0;
+        right: 0;
+        cursor: pointer;
+        display: none;
+        &.active {
+          display: block;
+        }
+        &_item:hover {
+          background-color: #ff7473;
+        }
+      }
+    }
   }
 
   &__btn {
