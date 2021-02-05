@@ -14,4 +14,41 @@
       background-color: #9cf1c1;
     }
   }
+
+  &__event {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff98c;
+    padding: 12px;
+  }
+  &__btn {
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    &_line {
+      display: block;
+      position: absolute;
+      width: 70%;
+      height: 2px;
+      background-color: #000;
+      &:first-child {
+        top: 14px;
+        transform: rotate(-45deg);
+      }
+      &:last-child {
+        bottom: 14px;
+        transform: rotate(45deg);
+      }
+    }
+    &:hover {
+      background-color: #ff7473;
+    }
+  }
 }
