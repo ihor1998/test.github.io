@@ -4,10 +4,10 @@ const select = document.querySelector('.header__select');
 
 function newOption() {
   const html = users.map((elem) => `
-        <option>
-            ${elem.name}
+        <option class="header__option" value=${elem}>
+            ${elem}
         </option>
-    `);
+    `).join('');
 
   select.innerHTML = html;
 }

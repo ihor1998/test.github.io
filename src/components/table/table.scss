@@ -32,23 +32,11 @@
     align-items: center;
     width: 30px;
     height: 30px;
-    &_line {
-      display: block;
-      position: absolute;
-      width: 70%;
-      height: 2px;
-      background-color: #000;
-      &:first-child {
-        top: 14px;
-        transform: rotate(-45deg);
-      }
-      &:last-child {
-        bottom: 14px;
-        transform: rotate(45deg);
-      }
-    }
+    font-size: 20px;
+    margin-left: 20px;
     &:hover {
       background-color: #ff7473;
+      color: #fff;
     }
   }
 }
