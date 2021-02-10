@@ -11,7 +11,6 @@ tBodies.addEventListener('click', (e) => {
 
   if (!event.closest('.table__btn')) return;
 
-  // eslint-disable-next-line no-use-before-define
   showMessage(event);
 });
 
@@ -46,7 +45,6 @@ function showMessage(event) {
   modal.addEventListener('click', (e) => {
     const { target } = e;
 
-    // eslint-disable-next-line no-use-before-define
     const newStorage = modStorage(elem);
 
     if (target.getAttribute('data') === 'Yes') {
@@ -62,5 +60,8 @@ function showMessage(event) {
 
 function modStorage(elem) {
   const cell = elem.parentElement;
-  return events.filter((el) => el.day !== cell.getAttribute('data-day') && el.time !== cell.getAttribute('data-time'));
+  return events.filter((el) => {
+   return el.day !== cell.getAttribute('data-day') ||
+      el.time !== cell.getAttribute('data-time')
+  });
 }
