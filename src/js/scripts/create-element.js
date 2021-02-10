@@ -4,7 +4,10 @@ const cells = Array.from(document.querySelectorAll('[data-day]'));
 
 function createElement() {
   events.forEach((elem) => {
-    const cell = cells.find((el) => el.getAttribute('data-day') === elem.day && el.getAttribute('data-time') === elem.time);
+    const cell = cells.find((el) => {
+      return el.getAttribute('data-day') === elem.day &&
+        el.getAttribute('data-time') === elem.time
+    });
     cell.style.padding = 0;
     cell.innerHTML = `
         <div class="table__event">
