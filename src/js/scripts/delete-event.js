@@ -1,5 +1,3 @@
-const events = JSON.parse(window.localStorage.getItem('events'));
-
 const table = document.getElementById('table');
 
 const tBodies = table.querySelector('tbody');
@@ -49,8 +47,8 @@ function showMessage(event) {
 
     if (target.getAttribute('data') === 'Yes') {
       modal.remove();
-      localStorage.clear();
-      localStorage.setItem('events', JSON.stringify(newStorage));
+      window.localStorage.clear();
+      window.localStorage.setItem('events', JSON.stringify(newStorage));
       elem.remove();
     } else if (target.getAttribute('data') === 'No') {
       modal.remove();
@@ -59,6 +57,7 @@ function showMessage(event) {
 }
 
 function modStorage(elem) {
+  const events = JSON.parse(window.localStorage.getItem('events'));
   const cell = elem.parentElement;
   return events.filter((el) => el.day !== cell.getAttribute('data-day')
       || el.time !== cell.getAttribute('data-time'));
