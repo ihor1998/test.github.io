@@ -9,8 +9,8 @@ table.table#table
         each elem in arr
             tr
                 td.table__col.time #{elem}
-                td.table__col(data-time=elem, data-day='Monday')
-                td.table__col(data-time=elem, data-day='Tuesday')
-                td.table__col(data-time=elem, data-day='Wednesday')
-                td.table__col(data-time=elem, data-day='Thursday')
-                td.table__col(data-time=elem, data-day='Friday')
+                td.table__col.cell(data-time=elem, data-day='Monday')
+                td.table__col.cell(data-time=elem, data-day='Tuesday')
+                td.table__col.cell(data-time=elem, data-day='Wednesday')
+                td.table__col.cell(data-time=elem, data-day='Thursday')
+                td.table__col.cell(data-time=elem, data-day='Friday')

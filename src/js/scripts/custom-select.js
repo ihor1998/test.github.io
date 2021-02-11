@@ -19,7 +19,7 @@ selectBody.addEventListener('click', addItem);
 function addItem(e) {
   const { target } = e;
   if (!target.closest('.form__select-custom__body_item')) return;
-  
+
   const item = e.target.textContent;
   target.innerHTML = '';
 

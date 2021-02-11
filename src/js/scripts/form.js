@@ -30,7 +30,7 @@ function validationCustomSelect() {
 
 function createEvent() {
   const items = [...document.querySelectorAll('[data-name]')];
-  
+
   if (input.value === '' || items.length === 0) {
     return;
   }
@@ -45,10 +45,8 @@ function createEvent() {
     participants,
   };
 
-  const busyCell = events.find((elem) => {
-    return obj.day === elem.day &&
-      obj.time === elem.time
-  })
+  const busyCell = events.find((elem) => obj.day === elem.day
+      && obj.time === elem.time);
 
   if (busyCell !== undefined) {
     showMessage(obj.day, obj.time);
@@ -66,7 +64,7 @@ function validationForm(e) {
   const items = [...document.querySelectorAll('[data-name]')];
   if (items.length === 0) {
     validationCustomSelect();
-  } 
+  }
 
   if (input.value === '') {
     validationInput();
@@ -75,6 +73,7 @@ function validationForm(e) {
   createEvent();
 }
 
+// eslint-disable-next-line no-shadow
 function showMessage(day, time) {
   const html = `
     <div id="message">
@@ -82,15 +81,14 @@ function showMessage(day, time) {
         <i class="fa fa-times" id="message__cancel"></i>
     </div>
   `;
-  
+
   form.insertAdjacentHTML('beforeend', html);
 
   const btn = document.getElementById('message__cancel');
 
   btn.addEventListener('click', () => {
     btn.parentElement.remove();
-  })
+  });
 }
-
 
 form.addEventListener('submit', validationForm);
