@@ -2,7 +2,7 @@
   border: 3px solid #000;
 
   &__col {
-    padding: 15px 25px;
+    padding: 19.5px 25px;
     border: 2px solid #000;
     text-align: center;
 
@@ -39,4 +39,8 @@
       color: #fff;
     }
   }
+}
+
+.cell {
+  min-width: 200px;
 }

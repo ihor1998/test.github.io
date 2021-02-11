@@ -60,8 +60,6 @@ function showMessage(event) {
 
 function modStorage(elem) {
   const cell = elem.parentElement;
-  return events.filter((el) => {
-   return el.day !== cell.getAttribute('data-day') ||
-      el.time !== cell.getAttribute('data-time')
-  });
+  return events.filter((el) => el.day !== cell.getAttribute('data-day')
+      || el.time !== cell.getAttribute('data-time'));
 }
