@@ -32,7 +32,7 @@ By clicking on the "New Event" button, you will go to the "Create Event" window
 
 ![select](./img/image_2021-02-13_16-58-16.png)
 
-#### Window “create event”:
+#### Window “Create Event”:
 
 ![create event](./img/image_2021-02-13_16-27-16.png)
 
@@ -54,8 +54,8 @@ By clicking on the "New Event" button, you will go to the "Create Event" window
 
 ![time](./img/image_2021-02-13_16-20-22.png)
 
-Push the button “create” for the event to appear on the Planner or push the button “cancel” if you change your mind. 
-After cancelling you will be on the page “Planner”.
+Push the button “Create” for the event to appear on the Planner or push the button “Cancel” if you change your mind. 
+After cancelling you will be on the window “Planner”.
 
 ![button](./img/image_2021-02-13_16-50-20.png)
 
