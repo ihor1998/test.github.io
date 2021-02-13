@@ -6,6 +6,32 @@
 
 ### Let’s go to functional: 
 
+#### Window “Planner”: 
+
+Here created events are added to the cell, according to the selected day and time.
+
+![planner](./img/image_2021-02-13_16-57-08.png)
+
+The cells where the events were added are highlighted in yellow. You can also delete an event by pressing the button "X".
+
+![cell](./img/image_2021-02-13_17-00-18.png)
+
+Then a modal window will appear.
+
+![modal](./img/image_2021-02-13_17-00-59.png)
+
+By clicking on the button “NO”, the modal window will close and you will be returned to the “Planner” window, if “YES”, the event will be deleted.
+
+![modal-button](./img/image_2021-02-13_18-40-04.png)
+
+With this select, you can filter events by attendees.
+
+![select](./img/image_2021-02-13_16-57-42.png)
+
+By clicking on the "New Event" button, you will go to the "Create Event" window
+
+![select](./img/image_2021-02-13_16-57-42.png)
+
 #### Window “create event”:
 
 ![create event](./img/image_2021-02-13_16-27-16.png)
@@ -37,3 +63,7 @@ After cancelling you will be on the page “Planner”.
 
 A prerequisite for creating an event is the presence of the event name and participants. 
 If you missed one of these graphs, then we will definitely inform you.
+
+![error-window](./img/image_2021-02-13_17-50-48.png)
+
+If the day and time have already taken, we will also inform you.
