@@ -30,7 +30,7 @@ With this select, you can filter events by attendees.
 
 By clicking on the "New Event" button, you will go to the "Create Event" window
 
-![select](./img/image_2021-02-13_16-57-42.png)
+![select](./img/image_2021-02-13_16-58-16.png)
 
 #### Window “create event”:
 
@@ -54,16 +54,16 @@ By clicking on the "New Event" button, you will go to the "Create Event" window
 
 ![time](./img/image_2021-02-13_16-20-22.png)
 
-![button](./img/image_2021-02-13_16-50-20.png)
-
 Push the button “create” for the event to appear on the Planner or push the button “cancel” if you change your mind. 
 After cancelling you will be on the page “Planner”.
 
-![error](./img/image_2021-02-13_16-20-44.png)
+![button](./img/image_2021-02-13_16-50-20.png)
 
 A prerequisite for creating an event is the presence of the event name and participants. 
 If you missed one of these graphs, then we will definitely inform you.
 
-![error-window](./img/image_2021-02-13_17-50-48.png)
+![error](./img/image_2021-02-13_16-20-44.png)
 
 If the day and time have already taken, we will also inform you.
+
+![error-window](./img/image_2021-02-13_17-50-48.png)
