@@ -1,12 +1,12 @@
 import createElement from './create-element';
 
-const events = JSON.parse(window.localStorage.getItem('events')) || [];
-
 const select = document.querySelector('.header__select');
 
 select.addEventListener('change', filterTable);
 
 function filterTable() {
+  const events = JSON.parse(window.localStorage.getItem('events')) || [];
+
   const filteredArr = events
     .filter(({ participants }) => participants.includes(select.value));
 
